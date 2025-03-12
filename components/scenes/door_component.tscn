@@ -1,0 +1,84 @@
+[gd_scene load_steps=8 format=3 uid="uid://cjpb2xomll8g4"]
+
+[ext_resource type="Texture2D" uid="uid://b4pw87ep6d02g" path="res://terrain/assets/interior/wooden_door_b.png" id="1_megey"]
+[ext_resource type="Script" path="res://components/scripts/door_component.gd" id="1_ox84r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fn4ed"]
+size = Vector2(16, 8)
+
+[sub_resource type="Animation" id="Animation_jecx2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Texture:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_wq62g"]
+resource_name = "close"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Texture:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [1, 0]
+}
+
+[sub_resource type="Animation" id="Animation_td4cp"]
+resource_name = "open"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Texture:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lf4er"]
+_data = {
+"RESET": SubResource("Animation_jecx2"),
+"close": SubResource("Animation_wq62g"),
+"open": SubResource("Animation_td4cp")
+}
+
+[node name="DoorComponent" type="Area2D" node_paths=PackedStringArray("_animation")]
+z_index = 2
+script = ExtResource("1_ox84r")
+_teleport_position = Vector2(2000, 0)
+_animation = NodePath("Animation")
+
+[node name="Texture" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_megey")
+hframes = 2
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, 11)
+shape = SubResource("RectangleShape2D_fn4ed")
+
+[node name="Animation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_lf4er")
+}
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="animation_finished" from="Animation" to="." method="_on_animation_finished"]

@@ -1,0 +1,91 @@
+[gd_scene load_steps=6 format=3 uid="uid://ctl5s5bajmmxg"]
+
+[ext_resource type="Texture2D" uid="uid://cusmrbx7jhrt8" path="res://terrain/assets/interior/walls.png" id="1_70v0s"]
+[ext_resource type="Texture2D" uid="uid://dis2t3fap5w0o" path="res://terrain/assets/interior/wooden.png" id="2_ahkpm"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3pplq"]
+texture = ExtResource("1_70v0s")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1.625, 8, 1.625, 8, 7.125, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1.625, 8, 1.625, 8, 7.125, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1.625, 8, 1.625, 8, 7.125, -8, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1.625, 8, 1.625, 8, 7.125, -8, 8)
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 1.25, -0.625, 1.25, -0.375, 8, 8, 8)
+5:0/0 = 0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-0.125, 1.375, -8, 1.25, -8, 8, 1.125, 8)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(0.625, -8, -8, -8, -8, 8, 0.875, 8)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, -0.5, -8, -0.625, 8, 8, 8)
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-0.5, -8, 8, -8, 8, 8, -0.75, 8)
+5:1/0 = 0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 0.75, -8, 0.625, 8, -8, 8)
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 0.375, -8, 3, 0.875, 8, 1.375, 8, 8, -8, 8)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 1.25, -8, 1.5, -8, 8, 8, 8)
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-0.75, -8, -1.125, 1.25, -8, 1.5, -8, 8, 8, 8, 8, -8)
+0:3/0 = 0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1.625, 8, 1.625, 8, 7.125, -8, 8)
+1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1.625, 8, 1.625, 8, 7.125, -8, 8)
+2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1.625, 8, 1.625, 8, 7.125, -8, 8)
+3:3/0 = 0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1.625, 8, 1.625, 8, 7.125, -8, 8)
+0:4/0 = 0
+0:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:4/0 = 0
+1:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:4/0 = 0
+2:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:4/0 = 0
+3:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:4/0 = 0
+4:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, -0.5, -8, -0.625, 8, 8, 8)
+5:4/0 = 0
+5:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 0.5, -8, 0.5, 8, -8, 8)
+0:5/0 = 0
+0:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:5/0 = 0
+1:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:5/0 = 0
+2:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:5/0 = 0
+3:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:5/0 = 0
+4:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-0.625, -8, 8, -8, 8, 8, -0.875, 8)
+5:5/0 = 0
+5:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 0.5, -8, 0.5, 8, -8, 8)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p55g5"]
+texture = ExtResource("2_ahkpm")
+0:0/next_alternative_id = 2
+0:0/0 = 0
+0:0/1 = 1
+0:0/1/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSet" id="TileSet_hagxy"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_3pplq")
+sources/1 = SubResource("TileSetAtlasSource_p55g5")
+
+[node name="Interior" type="TileMap"]
+texture_filter = 1
+tile_set = SubResource("TileSet_hagxy")
+format = 2
+layer_0/name = "walls_layer"
+layer_0/z_index = 1
+layer_1/name = "wooden_layer"
+layer_2/name = "wall_layer_invisible"
+layer_2/modulate = Color(1, 1, 1, 0)
