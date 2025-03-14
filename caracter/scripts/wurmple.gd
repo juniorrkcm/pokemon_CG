@@ -11,9 +11,9 @@ var _can_attack: bool = true  # Para evitar que o inimigo ataque infinitamente
 @export var _animation: AnimationPlayer = null
 @export var _attack_timer: Timer = null  # Timer para cooldown do ataque
 
-func _ready() -> void:
-	if _attack_timer:
-		_attack_timer.timeout.connect(_on_attack_timer_timeout)  # Conecta o timer para resetar ataques
+#func _ready() -> void:
+#	if _attack_timer:
+#		_attack_timer.timeout.connect(_on_attack_timer_timeout)  # Conecta o timer para resetar ataques
 
 func _on_detection_area_body_entered(_body) -> void:
 	if _body.is_in_group("charizard"):

@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://tdkqq6uhalv0"]
+
+[ext_resource type="Script" path="res://caracter/scripts/Tiro_inimigo.gd" id="1_4fpv1"]
+[ext_resource type="Texture2D" uid="uid://co6lm1fvnkarg" path="res://caracter/assets/Tiro_Inimigo.png" id="2_vbica"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wmk6w"]
+radius = 23.294
+height = 86.5832
+
+[node name="Tiro_inimigo" type="Area2D"]
+scale = Vector2(0.05, 0.05)
+script = ExtResource("1_4fpv1")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_vbica")
+
+[node name="Shape" type="CollisionShape2D" parent="."]
+position = Vector2(-0.313, -3.292)
+rotation = 1.5708
+scale = Vector2(1, 1)
+shape = SubResource("CapsuleShape2D_wmk6w")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(0, -4.5)
+scale = Vector2(4, 2.45)
+
+[connection signal="body_entered" from="." to="." method="_on_Tiro_inimigo_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
