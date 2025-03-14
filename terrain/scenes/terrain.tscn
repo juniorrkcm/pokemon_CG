@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://d26iojvavkioi" path="res://terrain/assets/base_terrain/plains.png" id="2_bmu7k"]
 [ext_resource type="Texture2D" uid="uid://dacpqhlnm6wfj" path="res://terrain/assets/base_terrain/decor_16x16.png" id="3_6r5jt"]
 [ext_resource type="Texture2D" uid="uid://code1dk0hbcrd" path="res://terrain/fences.png" id="4_5d4l6"]
-[ext_resource type="Texture2D" uid="uid://bfde1k4alljpv" path="res://terrain/assets/base_terrain/Solaria Demo Tiles.png" id="5_ho6ek"]
+[ext_resource type="Texture2D" uid="uid://bfde1k4alljpv" path="res://terrain/assets/interior/Solaria Demo Tiles.png" id="5_ho6ek"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t4huu"]
 resource_name = "grass"
@@ -493,6 +493,89 @@ texture = ExtResource("5_ho6ek")
 13:8/0 = 0
 14:8/0 = 0
 15:8/0 = 0
+6:3/0 = 0
+6:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 4.13675, -2.1583, -8, 1.97845, -8, 6.1152, -4.49647, 8, 2.51802, 5.57562, 8, -5.75548, 8)
+6:4/0 = 0
+6:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 4.13675, -6.65477, -8, 6.47491, -8, 8, -3.59717, 8, 2.51802, 5.57562, 8, -5.75548, 8)
+8:4/0 = 0
+6:2/0 = 0
+19:6/0 = 0
+19:7/0 = 0
+19:5/0 = 0
+20:5/0 = 0
+21:5/0 = 0
+21:6/0 = 0
+20:7/0 = 0
+21:7/0 = 0
+20:6/0 = 0
+6:5/0 = 0
+18:2/0 = 0
+18:3/0 = 0
+18:4/0 = 0
+18:5/0 = 0
+23:9/0 = 0
+22:12/0 = 0
+21:3/0 = 0
+19:0/0 = 0
+20:0/0 = 0
+21:0/0 = 0
+21:1/0 = 0
+21:2/0 = 0
+20:2/0 = 0
+19:2/0 = 0
+19:1/0 = 0
+20:1/0 = 0
+16:3/0 = 0
+17:3/0 = 0
+17:4/0 = 0
+16:4/0 = 0
+16:5/0 = 0
+17:5/0 = 0
+18:12/0 = 0
+18:11/0 = 0
+18:10/0 = 0
+18:9/0 = 0
+20:11/0 = 0
+21:10/0 = 0
+21:9/0 = 0
+21:8/0 = 0
+13:5/0 = 0
+14:5/0 = 0
+15:5/0 = 0
+15:4/0 = 0
+15:3/0 = 0
+14:3/0 = 0
+13:3/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+13:9/0 = 0
+13:10/0 = 0
+13:11/0 = 0
+13:12/0 = 0
+13:13/0 = 0
+15:13/0 = 0
+15:12/0 = 0
+14:12/0 = 0
+14:11/0 = 0
+15:11/0 = 0
+15:10/0 = 0
+14:10/0 = 0
+14:9/0 = 0
+15:9/0 = 0
+16:10/0 = 0
+16:9/0 = 0
+17:9/0 = 0
+17:11/0 = 0
+16:11/0 = 0
+17:10/0 = 0
+16:12/0 = 0
+17:13/0 = 0
+16:13/0 = 0
+20:4/0 = 0
+19:4/0 = 0
+19:3/0 = 0
+20:3/0 = 0
+14:13/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_18bf2"]
 physics_layer_0/collision_layer = 1

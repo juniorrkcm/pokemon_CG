@@ -1,10 +1,11 @@
-[gd_scene load_steps=71 format=3 uid="uid://0pmip8gdf5nt"]
+[gd_scene load_steps=72 format=3 uid="uid://0pmip8gdf5nt"]
 
 [ext_resource type="Script" uid="uid://bo3o5ngo1y02c" path="res://caracter/scripts/charizard.gd" id="1_v3the"]
 [ext_resource type="Texture2D" uid="uid://26g6j33gnvla" path="res://caracter/assets/Charizard-Idle-Anim.png" id="2_fx43i"]
 [ext_resource type="Texture2D" uid="uid://dmxngaysugjbi" path="res://caracter/assets/Charizard-Strike-Anim.png" id="4_pm387"]
 [ext_resource type="Texture2D" uid="uid://6npmmp0wvxv1" path="res://caracter/assets/Charizard-Hurt-Anim.png" id="5_3cigr"]
 [ext_resource type="Texture2D" uid="uid://mi202s8bbio3" path="res://caracter/assets/Charizard-Sleep-Anim.png" id="5_ign6y"]
+[ext_resource type="Script" uid="uid://6qmn0udfjqra" path="res://caracter/scripts/camera.gd" id="6_2i4gn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6yoqt"]
 size = Vector2(27, 9.5)
@@ -2378,6 +2379,8 @@ shape = SubResource("RectangleShape2D_yj8wr")
 disabled = true
 
 [node name="Camera" type="Camera2D" parent="."]
+editor_draw_limits = true
+script = ExtResource("6_2i4gn")
 
 [node name="_hurt_timer" type="Timer" parent="."]
 wait_time = 0.6
