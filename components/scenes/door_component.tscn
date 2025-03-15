@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://cjpb2xomll8g4"]
 
 [ext_resource type="Texture2D" uid="uid://b4pw87ep6d02g" path="res://terrain/assets/interior/wooden_door_b.png" id="1_megey"]
-[ext_resource type="Script" path="res://components/scripts/door_component.gd" id="1_ox84r"]
+[ext_resource type="Script" uid="uid://jd3xevltm7dv" path="res://components/scripts/door_component.gd" id="1_ox84r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fn4ed"]
 size = Vector2(16, 8)
@@ -55,9 +55,9 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_lf4er"]
 _data = {
-"RESET": SubResource("Animation_jecx2"),
-"close": SubResource("Animation_wq62g"),
-"open": SubResource("Animation_td4cp")
+&"RESET": SubResource("Animation_jecx2"),
+&"close": SubResource("Animation_wq62g"),
+&"open": SubResource("Animation_td4cp")
 }
 
 [node name="DoorComponent" type="Area2D" node_paths=PackedStringArray("_animation")]
