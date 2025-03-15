@@ -3,7 +3,7 @@ class_name Octillery
 
 @export var _animation: AnimationPlayer = null
 @export var velocidade = 20
-@export var velocidade_tiro = 10
+@export var velocidade_tiro = 50
 @export var dano = 1
 var direcao = Vector2.ZERO
 var andando = true

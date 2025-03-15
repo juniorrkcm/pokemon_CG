@@ -1,7 +1,7 @@
 extends Area2D
 
 var direcao = Vector2.ZERO
-@export var velocidade = 800
+@export var velocidade = 500
 var dano = 1
 
 func _process(delta: float) -> void:
