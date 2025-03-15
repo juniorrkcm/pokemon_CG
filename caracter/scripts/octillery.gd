@@ -1,13 +1,18 @@
 extends CharacterBody2D
 class_name Octillery
 
+@export var _animation: AnimationPlayer = null
 @export var velocidade = 20
-@export var velocidade_tiro = 120
+@export var velocidade_tiro = 10
 @export var dano = 1
 var direcao = Vector2.ZERO
 var andando = true
 var pode_atirar = true
 var player_ref = null
+
+# Variáveis para controle de dano e direção
+var _is_hurt: bool = false
+var _last_direction: Vector2 = Vector2.ZERO
 
 var direcoes_possiveis = [
 	Vector2(0, 1),    # baixo
@@ -23,16 +28,23 @@ var direcoes_possiveis = [
 var tiro = preload("res://caracter/scenes/Tiro_inimigo.tscn")
 
 func _ready() -> void:
+	# Adiciona o Octillery ao grupo "enemy" para ser reconhecido pelo Charizard
+	add_to_group("enemy")
 	set_physics_process(true)
 	escolher_nova_direcao()
 
 func _physics_process(delta: float) -> void:
+	# Se o inimigo está em hurt, não faz nada de animação/movimento
+	if _is_hurt:
+		return
+
 	if player_ref:
 		velocity = Vector2.ZERO
 		if pode_atirar:
 			atirar()
 	else:
 		velocity = direcao.normalized() * velocidade
+		_last_direction = direcao.normalized()
 		move_and_slide()
 	
 	_set_animation()
@@ -88,6 +100,7 @@ func atirar():
 	pode_atirar = false
 	$Tiro_Delay.start()
 
+# Detecção do Charizard para definir o player_ref
 func _on_DetectionArea_body_entered(body: Node2D) -> void:
 	if body.name == "Charizard":
 		player_ref = body
@@ -101,3 +114,29 @@ func _on_timer_para_andar_timeout() -> void:
 
 func _on_Tiro_Delay_timeout() -> void:
 	pode_atirar = true
+
+# Função para receber dano do Charizard
+func update_health() -> void:
+	_is_hurt = true
+	
+	var direction = _last_direction.normalized()
+	
+	if direction.x > 0.5 and abs(direction.y) < 0.5:
+		_animation.play("hurt_right")
+	elif direction.x < -0.5 and abs(direction.y) < 0.5:
+		_animation.play("hurt_left")
+	elif direction.y > 0.5 and abs(direction.x) < 0.5:
+		_animation.play("hurt_down")
+	elif direction.y < -0.5 and abs(direction.x) < 0.5:
+		_animation.play("hurt_up")
+	elif direction.x > 0.5 and direction.y > 0.5:
+		_animation.play("hurt_down_right")
+	elif direction.x < -0.5 and direction.y > 0.5:
+		_animation.play("hurt_down_left")
+	elif direction.x > 0.5 and direction.y < -0.5:
+		_animation.play("hurt_up_right")
+	elif direction.x < -0.5 and direction.y < -0.5:
+		_animation.play("hurt_up_left")
+
+func _on_animation_finished(anim: String) -> void:
+	queue_free()

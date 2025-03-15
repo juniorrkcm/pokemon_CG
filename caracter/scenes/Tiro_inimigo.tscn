@@ -9,7 +9,10 @@ height = 86.5832
 
 [node name="Tiro_inimigo" type="Area2D"]
 scale = Vector2(0.05, 0.05)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("1_4fpv1")
+velocidade = 100
 
 [node name="Sprite" type="Sprite2D" parent="."]
 texture = ExtResource("2_vbica")
@@ -17,7 +20,6 @@ texture = ExtResource("2_vbica")
 [node name="Shape" type="CollisionShape2D" parent="."]
 position = Vector2(-0.313, -3.292)
 rotation = 1.5708
-scale = Vector2(1, 1)
 shape = SubResource("CapsuleShape2D_wmk6w")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
