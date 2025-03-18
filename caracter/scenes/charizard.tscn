@@ -1,11 +1,11 @@
 [gd_scene load_steps=72 format=3 uid="uid://0pmip8gdf5nt"]
 
-[ext_resource type="Script" path="res://caracter/scripts/charizard.gd" id="1_v3the"]
+[ext_resource type="Script" uid="uid://bo3o5ngo1y02c" path="res://caracter/scripts/charizard.gd" id="1_v3the"]
 [ext_resource type="Texture2D" uid="uid://26g6j33gnvla" path="res://caracter/assets/Charizard-Idle-Anim.png" id="2_fx43i"]
 [ext_resource type="Texture2D" uid="uid://dmxngaysugjbi" path="res://caracter/assets/Charizard-Strike-Anim.png" id="4_pm387"]
 [ext_resource type="Texture2D" uid="uid://6npmmp0wvxv1" path="res://caracter/assets/Charizard-Hurt-Anim.png" id="5_3cigr"]
 [ext_resource type="Texture2D" uid="uid://mi202s8bbio3" path="res://caracter/assets/Charizard-Sleep-Anim.png" id="5_ign6y"]
-[ext_resource type="Script" path="res://caracter/scripts/camera.gd" id="6_2i4gn"]
+[ext_resource type="Script" uid="uid://6qmn0udfjqra" path="res://caracter/scripts/camera.gd" id="6_2i4gn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6yoqt"]
 size = Vector2(27, 9.5)
@@ -2139,35 +2139,35 @@ tracks/4/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_fn5lq"]
 _data = {
-"RESET": SubResource("Animation_pcfal"),
-"attack_down": SubResource("Animation_pxm30"),
-"attack_down_left": SubResource("Animation_twjnb"),
-"attack_down_right": SubResource("Animation_h005o"),
-"attack_left": SubResource("Animation_ped13"),
-"attack_right": SubResource("Animation_3uyp6"),
-"attack_up": SubResource("Animation_42xe8"),
-"attack_up_left": SubResource("Animation_qt2o1"),
-"attack_up_right": SubResource("Animation_7ck1d"),
-"hurt_down": SubResource("Animation_vy6k8"),
-"hurt_down_left": SubResource("Animation_62omc"),
-"hurt_down_right": SubResource("Animation_fiskr"),
-"hurt_left": SubResource("Animation_1cw8y"),
-"hurt_rigth": SubResource("Animation_5rj6u"),
-"hurt_up": SubResource("Animation_p5w3d"),
-"hurt_up_left": SubResource("Animation_0lta2"),
-"hurt_up_right": SubResource("Animation_das0q"),
-"idle_down": SubResource("Animation_rjexu"),
-"idle_left": SubResource("Animation_olrld"),
-"idle_right": SubResource("Animation_4ei7m"),
-"idle_up": SubResource("Animation_v7yvo"),
-"walk_down": SubResource("Animation_v156h"),
-"walk_down_left": SubResource("Animation_fckg2"),
-"walk_down_right": SubResource("Animation_5m3t2"),
-"walk_left": SubResource("Animation_xinht"),
-"walk_right": SubResource("Animation_66jil"),
-"walk_up": SubResource("Animation_7cfnf"),
-"walk_up_left": SubResource("Animation_o4uwn"),
-"walk_up_right": SubResource("Animation_kl8ch")
+&"RESET": SubResource("Animation_pcfal"),
+&"attack_down": SubResource("Animation_pxm30"),
+&"attack_down_left": SubResource("Animation_twjnb"),
+&"attack_down_right": SubResource("Animation_h005o"),
+&"attack_left": SubResource("Animation_ped13"),
+&"attack_right": SubResource("Animation_3uyp6"),
+&"attack_up": SubResource("Animation_42xe8"),
+&"attack_up_left": SubResource("Animation_qt2o1"),
+&"attack_up_right": SubResource("Animation_7ck1d"),
+&"hurt_down": SubResource("Animation_vy6k8"),
+&"hurt_down_left": SubResource("Animation_62omc"),
+&"hurt_down_right": SubResource("Animation_fiskr"),
+&"hurt_left": SubResource("Animation_1cw8y"),
+&"hurt_rigth": SubResource("Animation_5rj6u"),
+&"hurt_up": SubResource("Animation_p5w3d"),
+&"hurt_up_left": SubResource("Animation_0lta2"),
+&"hurt_up_right": SubResource("Animation_das0q"),
+&"idle_down": SubResource("Animation_rjexu"),
+&"idle_left": SubResource("Animation_olrld"),
+&"idle_right": SubResource("Animation_4ei7m"),
+&"idle_up": SubResource("Animation_v7yvo"),
+&"walk_down": SubResource("Animation_v156h"),
+&"walk_down_left": SubResource("Animation_fckg2"),
+&"walk_down_right": SubResource("Animation_5m3t2"),
+&"walk_left": SubResource("Animation_xinht"),
+&"walk_right": SubResource("Animation_66jil"),
+&"walk_up": SubResource("Animation_7cfnf"),
+&"walk_up_left": SubResource("Animation_o4uwn"),
+&"walk_up_right": SubResource("Animation_kl8ch")
 }
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_es838"]
@@ -2358,7 +2358,7 @@ shape = SubResource("RectangleShape2D_6yoqt")
 
 [node name="Animation" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_fn5lq")
+&"": SubResource("AnimationLibrary_fn5lq")
 }
 
 [node name="AnimationTree" type="AnimationTree" parent="."]

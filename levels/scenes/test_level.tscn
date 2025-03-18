@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bdf1smh7xc1jd" path="res://terrain/scenes/terrain.tscn" id="1_aag3p"]
 [ext_resource type="PackedScene" uid="uid://0pmip8gdf5nt" path="res://caracter/scenes/charizard.tscn" id="2_h5yjm"]
 [ext_resource type="PackedScene" uid="uid://ctl5s5bajmmxg" path="res://terrain/scenes/interior.tscn" id="2_plmae"]
-[ext_resource type="Script" path="res://levels/Scripts/LevelTileMap.gd" id="2_rxat5"]
+[ext_resource type="Script" uid="uid://dure8s0w5n3sc" path="res://levels/Scripts/LevelTileMap.gd" id="2_rxat5"]
 [ext_resource type="PackedScene" uid="uid://fpthmipiyq58" path="res://terrain/scenes/objects_terrain.tscn" id="3_h5ev1"]
 [ext_resource type="PackedScene" uid="uid://cjpb2xomll8g4" path="res://components/scenes/door_component.tscn" id="5_1w84o"]
 [ext_resource type="PackedScene" uid="uid://cuubl2qldw77c" path="res://caracter/scenes/wurmple.tscn" id="6_aw4u5"]

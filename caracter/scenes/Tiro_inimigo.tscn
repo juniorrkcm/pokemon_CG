@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://tdkqq6uhalv0"]
 
-[ext_resource type="Script" path="res://caracter/scripts/Tiro_inimigo.gd" id="1_4fpv1"]
+[ext_resource type="Script" uid="uid://r3e0268xispb" path="res://caracter/scripts/Tiro_inimigo.gd" id="1_4fpv1"]
 [ext_resource type="Texture2D" uid="uid://co6lm1fvnkarg" path="res://caracter/assets/Tiro_Inimigo.png" id="2_vbica"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wmk6w"]

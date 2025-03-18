@@ -1,6 +1,6 @@
 [gd_scene load_steps=29 format=3 uid="uid://cni4eejmilpg6"]
 
-[ext_resource type="Script" path="res://caracter/scripts/wurmple.gd" id="1_spag2"]
+[ext_resource type="Script" uid="uid://bbh8dptv47js8" path="res://caracter/scripts/wurmple.gd" id="1_spag2"]
 [ext_resource type="Texture2D" uid="uid://cw0ear37l5iyh" path="res://caracter/assets/Wurmple-Walk-Anim.png" id="2_whvoa"]
 [ext_resource type="Texture2D" uid="uid://4w7hg2f4bdej" path="res://caracter/assets/Wurmple-Hurt-Anim.png" id="3_ip2nu"]
 [ext_resource type="Texture2D" uid="uid://ddu4x7lm3yntv" path="res://caracter/assets/Wurmple-Sleep-Anim.png" id="4_mdtg6"]
@@ -1110,27 +1110,27 @@ tracks/3/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_o3liu"]
 _data = {
-"RESET": SubResource("Animation_ykru6"),
-"hurt_down": SubResource("Animation_wyhha"),
-"hurt_down_left": SubResource("Animation_6jkar"),
-"hurt_down_right": SubResource("Animation_u5fni"),
-"hurt_left": SubResource("Animation_floin"),
-"hurt_right": SubResource("Animation_ly6hv"),
-"hurt_up": SubResource("Animation_00w1a"),
-"hurt_up_left": SubResource("Animation_yg8qa"),
-"hurt_up_right": SubResource("Animation_0nh22"),
-"idle_down": SubResource("Animation_ntunm"),
-"idle_left": SubResource("Animation_54l73"),
-"idle_right": SubResource("Animation_7317j"),
-"idle_up": SubResource("Animation_lblau"),
-"walk_down": SubResource("Animation_k7uny"),
-"walk_down_left": SubResource("Animation_flp4n"),
-"walk_down_right": SubResource("Animation_kyqsf"),
-"walk_left": SubResource("Animation_pgb0b"),
-"walk_right": SubResource("Animation_g0ham"),
-"walk_up": SubResource("Animation_nipac"),
-"walk_up_left": SubResource("Animation_323lf"),
-"walk_up_right": SubResource("Animation_ivgwh")
+&"RESET": SubResource("Animation_ykru6"),
+&"hurt_down": SubResource("Animation_wyhha"),
+&"hurt_down_left": SubResource("Animation_6jkar"),
+&"hurt_down_right": SubResource("Animation_u5fni"),
+&"hurt_left": SubResource("Animation_floin"),
+&"hurt_right": SubResource("Animation_ly6hv"),
+&"hurt_up": SubResource("Animation_00w1a"),
+&"hurt_up_left": SubResource("Animation_yg8qa"),
+&"hurt_up_right": SubResource("Animation_0nh22"),
+&"idle_down": SubResource("Animation_ntunm"),
+&"idle_left": SubResource("Animation_54l73"),
+&"idle_right": SubResource("Animation_7317j"),
+&"idle_up": SubResource("Animation_lblau"),
+&"walk_down": SubResource("Animation_k7uny"),
+&"walk_down_left": SubResource("Animation_flp4n"),
+&"walk_down_right": SubResource("Animation_kyqsf"),
+&"walk_left": SubResource("Animation_pgb0b"),
+&"walk_right": SubResource("Animation_g0ham"),
+&"walk_up": SubResource("Animation_nipac"),
+&"walk_up_left": SubResource("Animation_323lf"),
+&"walk_up_right": SubResource("Animation_ivgwh")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m4p5t"]
@@ -1151,7 +1151,7 @@ vframes = 8
 
 [node name="Animation" type="AnimationPlayer" parent="." groups=["enemy"]]
 libraries = {
-"": SubResource("AnimationLibrary_o3liu")
+&"": SubResource("AnimationLibrary_o3liu")
 }
 
 [node name="Collision" type="CollisionShape2D" parent="."]
