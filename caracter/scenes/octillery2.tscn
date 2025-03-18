@@ -1,6 +1,6 @@
 [gd_scene load_steps=35 format=3 uid="uid://h704nbjhj75"]
 
-[ext_resource type="Script" uid="uid://c2t4rr1x7nvm7" path="res://caracter/scripts/octillery.gd" id="1_fybkv"]
+[ext_resource type="Script" path="res://caracter/scripts/octillery.gd" id="1_fybkv"]
 [ext_resource type="Texture2D" uid="uid://br0024v0fr53r" path="res://caracter/assets/Octillery-Sleep-Anim.png" id="2_005xe"]
 [ext_resource type="Texture2D" uid="uid://b7insj3nelrqu" path="res://caracter/assets/Octillery-Attack-Anim.png" id="3_4k3aw"]
 [ext_resource type="Texture2D" uid="uid://mwauipnvlj41" path="res://caracter/assets/Octillery-Hurt-Anim.png" id="4_j3ndj"]
@@ -1387,32 +1387,32 @@ tracks/3/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_wv3wf"]
 _data = {
-&"RESET": SubResource("Animation_xj8qf"),
-&"attack_down": SubResource("Animation_h2nam"),
-&"attack_down_left": SubResource("Animation_abwng"),
-&"attack_down_right": SubResource("Animation_n1pqh"),
-&"attack_left": SubResource("Animation_ix3mf"),
-&"attack_right": SubResource("Animation_4ag2m"),
-&"attack_up": SubResource("Animation_77ym1"),
-&"attack_up_left": SubResource("Animation_nx8cq"),
-&"attack_up_right": SubResource("Animation_vyqgb"),
-&"hurt_down": SubResource("Animation_1bjet"),
-&"hurt_down_left": SubResource("Animation_fn5qv"),
-&"hurt_down_right": SubResource("Animation_7k0py"),
-&"hurt_left": SubResource("Animation_af3ft"),
-&"hurt_right": SubResource("Animation_omumt"),
-&"hurt_up": SubResource("Animation_dc40m"),
-&"hurt_up_left": SubResource("Animation_geen2"),
-&"hurt_up_right": SubResource("Animation_qsvc2"),
-&"idle": SubResource("Animation_cvnba"),
-&"walk_down": SubResource("Animation_yh2ge"),
-&"walk_down_left": SubResource("Animation_yv7u4"),
-&"walk_down_right": SubResource("Animation_4mv20"),
-&"walk_left": SubResource("Animation_48k1g"),
-&"walk_right": SubResource("Animation_6x1nx"),
-&"walk_up": SubResource("Animation_xpx2a"),
-&"walk_up_left": SubResource("Animation_y7olb"),
-&"walk_up_right": SubResource("Animation_3cqvk")
+"RESET": SubResource("Animation_xj8qf"),
+"attack_down": SubResource("Animation_h2nam"),
+"attack_down_left": SubResource("Animation_abwng"),
+"attack_down_right": SubResource("Animation_n1pqh"),
+"attack_left": SubResource("Animation_ix3mf"),
+"attack_right": SubResource("Animation_4ag2m"),
+"attack_up": SubResource("Animation_77ym1"),
+"attack_up_left": SubResource("Animation_nx8cq"),
+"attack_up_right": SubResource("Animation_vyqgb"),
+"hurt_down": SubResource("Animation_1bjet"),
+"hurt_down_left": SubResource("Animation_fn5qv"),
+"hurt_down_right": SubResource("Animation_7k0py"),
+"hurt_left": SubResource("Animation_af3ft"),
+"hurt_right": SubResource("Animation_omumt"),
+"hurt_up": SubResource("Animation_dc40m"),
+"hurt_up_left": SubResource("Animation_geen2"),
+"hurt_up_right": SubResource("Animation_qsvc2"),
+"idle": SubResource("Animation_cvnba"),
+"walk_down": SubResource("Animation_yh2ge"),
+"walk_down_left": SubResource("Animation_yv7u4"),
+"walk_down_right": SubResource("Animation_4mv20"),
+"walk_left": SubResource("Animation_48k1g"),
+"walk_right": SubResource("Animation_6x1nx"),
+"walk_up": SubResource("Animation_xpx2a"),
+"walk_up_left": SubResource("Animation_y7olb"),
+"walk_up_right": SubResource("Animation_3cqvk")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mpsab"]
@@ -1432,7 +1432,7 @@ hframes = 2
 
 [node name="Animation" type="AnimationPlayer" parent="." groups=["enemy"]]
 libraries = {
-&"": SubResource("AnimationLibrary_wv3wf")
+"": SubResource("AnimationLibrary_wv3wf")
 }
 
 [node name="Timer_para_andar" type="Timer" parent="."]

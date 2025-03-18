@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cpax0vbr06g3r"]
 
-[ext_resource type="Script" uid="uid://vbqtwure2ve7" path="res://caracter/scripts/path_follow_2d.gd" id="1_hepfu"]
+[ext_resource type="Script" path="res://caracter/scripts/path_follow_2d.gd" id="1_hepfu"]
 [ext_resource type="Texture2D" uid="uid://c8mptvpvkea4j" path="res://icon.svg" id="2_eg0t8"]
 
 [sub_resource type="Curve2D" id="Curve2D_0retl"]

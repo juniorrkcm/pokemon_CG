@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cm1sih3iind5"]
 
-[ext_resource type="Script" uid="uid://cyu743qdfog" path="res://Menu/Scripts/control.gd" id="1_pwh6s"]
+[ext_resource type="Script" path="res://Menu/Scripts/control.gd" id="1_pwh6s"]
 [ext_resource type="Texture2D" uid="uid://yu1654djfa3" path="res://menu-inicial.png" id="1_qg1lj"]
 [ext_resource type="AudioStream" uid="uid://cb5labgfe1i35" path="res://Sons/003 - Introductions.mp3" id="2_rhxp8"]
 
