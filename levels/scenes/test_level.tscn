@@ -32,13 +32,13 @@ layer_2/tile_data = PackedInt32Array(120, 1, 65536, 131192, 1, 65536, 65656, 1, 
 [node name="DoorComponent" parent="Components" instance=ExtResource("5_1w84o")]
 visible = false
 z_index = 1
-position = Vector2(1240, 200)
-_teleport_position = Vector2(1016, 128)
+position = Vector2(1448, 104)
+_teleport_position = Vector2(1016, 144)
 
 [node name="DoorComponent2" parent="Components" instance=ExtResource("5_1w84o")]
 z_index = 1
 position = Vector2(1016, 104)
-_teleport_position = Vector2(1240, 216)
+_teleport_position = Vector2(1448, 128)
 
 [node name="YSort" type="Node2D" parent="."]
 z_index = 1
@@ -68,5 +68,5 @@ position = Vector2(1744, 296)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("10_10o60")
-volume_db = -20.0
+volume_db = -30.0
 autoplay = true

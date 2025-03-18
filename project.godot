@@ -11,12 +11,13 @@ config_version=5
 [application]
 
 config/name="Pokemon2"
+run/main_scene="res://levels/scenes/test_level.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
-LevelManager="*res://00_Global/GlobalLevelManager.gd"
+LevelManager="*res://Global/GlobalLevelManager.gd"
 
 [display]
 

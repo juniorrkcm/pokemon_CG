@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cpax0vbr06g3r"]
+
+[ext_resource type="PackedScene" uid="uid://bosnm3cwb1gmb" path="res://caracter/scenes/octillery.tscn" id="1_fgf43"]
+[ext_resource type="Script" path="res://caracter/scripts/path_follow_2d.gd" id="1_hepfu"]
+
+[sub_resource type="Curve2D" id="Curve2D_0retl"]
+_data = {
+"points": PackedVector2Array(-28.3482, 0.629961, 28.3482, -0.629961, 0, 0, -62.9961, -64.8859, 62.9961, 64.8859, 256, 0, 91.3443, -56.0665, -91.3443, 56.0665, 256, 160, 78.7451, 81.8949, -78.7451, -81.8949, -8, 160, -15.749, 12.5992, 15.749, -12.5992, -8, 0)
+}
+point_count = 5
+
+[node name="Path2D" type="Path2D"]
+curve = SubResource("Curve2D_0retl")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="."]
+rotation = -0.0222186
+script = ExtResource("1_hepfu")
+
+[node name="Octillery" parent="PathFollow2D" instance=ExtResource("1_fgf43")]
