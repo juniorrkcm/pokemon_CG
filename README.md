@@ -1,4 +1,4 @@
-# Pokémon Adventure CG
+# Poquemon Adventure
 
 Bem-vindo ao repositório **Poquemon Adventure**, um jogo desenvolvido utilizando a engine **Godot** como parte de um projeto de Computação Gráfica.
 
