@@ -31,7 +31,6 @@ Para rodar ou modificar o projeto, você precisará de:
 2. Abra o projeto na **Godot Engine**.
 3. Execute a cena principal pelo editor.
 4. Alternativamente, utilize o arquivo executável presente na pasta **Jogo/**.
-5. **Executável:** Utilize o arquivo localizado na pasta **"Jogo"**
 
 ## 🏆 Contribuição
 Se desejar contribuir para o projeto, sinta-se à vontade para abrir uma issue ou fazer um pull request. Sugestões e melhorias são sempre bem-vindas!
